@@ -1,0 +1,16 @@
+app.js --> routes(user, sauces).js --> controller(user, sauces).js --> model(user, sauces).js
+
+dans app.js:
+si requête vers cette adresse, rediriger vers ce fichier route(user)
+si requête vers cette adresse, rediriger vers ce fichier route(sauces)
+
+dans route.js:(user/sauces)
+si requête get, rediriger vers ce fichier controller(user/sauces)
+si requête post, rediriger vers ce fichier controller(user/sauces)
+si requête delete, rediriger vers ce fichier controller(user/sauces)
+etc
+
+dans controller.js:(user/sauces)
+fonctions
++
+rediriger vers fichier model.js(user/sauces)
