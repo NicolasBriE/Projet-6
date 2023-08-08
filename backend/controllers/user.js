@@ -21,7 +21,7 @@ exports.login = (req, res, next) => {
         .then(user => {
 
             if (!user) {
-                res.status(401).json({ message: "Utilisateur non trouvé" })
+                res.status(404).json({ message: "Utilisateur non trouvé" })
             }
 
             else {
